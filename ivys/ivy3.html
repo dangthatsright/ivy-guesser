@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Maps Embedded Location</title>
+    <style>
+        .iframe-container {
+            position: relative;
+            width: 600px;
+            height: 450px;
+        }
+        .overlay-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px; /* Adjust width as needed */
+            height: 70px; /* Adjust height as needed */
+            background-color: black;
+            z-index: 10;
+            pointer-events: none; /* Allows interaction with iframe beneath */
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <div class="overlay-box"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1743183271725!6m8!1m7!1s4lZp7nBF2ZIlH_3JeC4L0Q!2m2!1d41.31582235517423!2d-72.9227102815292!3f241.05456972084443!4f0.9973512320496809!5f0.7820865974627469"
+            width="1500" 
+            height="600" 
+            style="border:0;" 
+            allowfullscreen=False
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</body>
+</html>
